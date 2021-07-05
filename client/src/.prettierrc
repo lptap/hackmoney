@@ -1,0 +1,12 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "*.{js,ts,jsx,tsx,json,html,scss,css}"
+    }
+  ],
+  "tabWidth": 2
+}

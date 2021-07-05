@@ -1,0 +1,27 @@
+.ReactModal__Overlay {
+  opacity: 0;
+  transition-property: opacity;
+  z-index: 999999999999;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 100;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  position: relative;
+  top: 50%;
+  transition-property: top;
+}
+
+.ReactModal__Content--after-open {
+  top: 0;
+}
+
+.ReactModal__Content--before-close {
+  top: 50%;
+}

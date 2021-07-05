@@ -1,0 +1,77 @@
+@import url('./assets/fonts/fonts.css');
+
+body {
+  margin: 0;
+  font-family: 'Exo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.snackbar-top-anim {
+  animation: topFadeIn 0.5s, topFadeOut 0.5s 2.5s;
+}
+
+.snackbar-bot-anim {
+  animation: botFadeIn 0.5s, botFadeOut 0.5s 2.5s;
+}
+
+@keyframes topFadeIn {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 1rem;
+    opacity: 1;
+  }
+}
+
+@keyframes topFadeOut {
+  from {
+    top: 1rem;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes botFadeIn {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 1rem;
+    opacity: 1;
+  }
+}
+
+@keyframes botFadeOut {
+  from {
+    bottom: 1rem;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
